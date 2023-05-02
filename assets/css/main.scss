@@ -1,0 +1,50 @@
+table td {
+  min-width: 130px;
+}
+
+.calculator > div,
+.results {
+  max-width: 580px;
+}
+
+.content {
+  max-width: 960px;
+  grid-gap: 24px;
+  grid-template-rows: 1fr;
+
+  .calculator {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+
+  .results {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+
+    .results-table {
+      max-width: 360px;
+      place-self: center;
+      overflow: auto;
+    }
+  }
+
+  @media (min-width: 916px) {
+    .calculator {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .results {
+      grid-template-columns: 1fr 0.68fr;
+
+      .results-table {
+        max-width: initial;
+        place-self: initial;
+      }
+    }
+
+    .calculator > div,
+    .results {
+      max-width: initial;
+    }
+  }
+}

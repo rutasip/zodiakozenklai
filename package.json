@@ -1,0 +1,10 @@
+{
+  "name": "zodiakozenklai",
+  "license": "MIT",
+  "scripts": {
+    "build": "purgecss --css assets/css/bootstrap.min.css --content index.html --output dist/"
+  },
+  "devDependencies": {
+    "purgecss": "^5.0.0"
+  }
+}
